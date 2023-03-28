@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fake News Detection</title>
+    <style>
+      body {
+        background-color: #1b1b1b;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff;
+      }
+      h1 {
+        font-size: 48px;
+        text-align: center;
+        margin-top: 100px;
+      }
+      p {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      form {
+        margin-top: 50px;
+        text-align: center;
+      }
+      input[type="text"] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #333;
+        font-size: 16px;
+      }
+      button[type="submit"] {
+        background-color: #f44336;
+        color: #fff;
+        padding: 16px 32px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.2s;
+      }
+      button[type="submit"]:hover {
+        background-color: #e53935;
+      }
+      .logo {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 200px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://www.shutterstock.com/image-vector/megaphone-hand-business-concept-text-600w-1036271818.jpg" alt="Fake News Detection" class="logo">
+    <h1>Get the Facts Straight</h1>
+    <p>Enter a news article to check if it's real or fake:</p>
+    <form action="/predict" method="POST">
+      <input type="text" name="article" placeholder="Enter news article here...">
+      <button type="submit">Check</button>
+    </form>
+  </body>
+</html>
